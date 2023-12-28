@@ -1,0 +1,53 @@
+20:46:37 **** Build of configuration Debug for project freeRTOS ****
+make -j4 all 
+arm-none-eabi-size   freeRTOS.elf 
+   text	   data	    bss	    dec	    hex	filename
+  28084	    124	  20508	  48716	   be4c	freeRTOS.elf
+Finished building: default.size.stdout
+ 
+20:46:47 **** Incremental Build of configuration Debug for project freeRTOS ****
+make -j4 all 
+arm-none-eabi-size   freeRTOS.elf 
+   text	   data	    bss	    dec	    hex	filename
+  28084	    124	  20508	  48716	   be4c	freeRTOS.elf
+Finished building: default.size.stdout
+ 
+23:05:03 **** Incremental Build of configuration Debug for project freeRTOS ****
+make -j4 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F446xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -I../Middlewares/Third_Party/FreeRTOS/Source/include -I../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2 -I../Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'StartTaskQM':
+../Core/Src/main.c:324:11: warning: the comparison will always evaluate as 'true' for the address of 'pData' will never be NULL [-Waddress]
+  324 |   if(NULL != &pData)
+      |           ^~
+arm-none-eabi-gcc -o "freeRTOS.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\MainFolder\ST32_projects\FreeRTOS\freeRTOS\STM32F446RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="freeRTOS.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: freeRTOS.elf
+ 
+arm-none-eabi-size   freeRTOS.elf 
+arm-none-eabi-objdump -h -S  freeRTOS.elf  > "freeRTOS.list"
+   text	   data	    bss	    dec	    hex	filename
+  28100	    124	  20508	  48732	   be5c	freeRTOS.elf
+Finished building: default.size.stdout
+ 
+Finished building: freeRTOS.list
+ 
+23:05:55 **** Incremental Build of configuration Debug for project freeRTOS ****
+make -j4 all 
+arm-none-eabi-size   freeRTOS.elf 
+   text	   data	    bss	    dec	    hex	filename
+  28100	    124	  20508	  48732	   be5c	freeRTOS.elf
+Finished building: default.size.stdout
+ 
+23:06:05 **** Incremental Build of configuration Debug for project freeRTOS ****
+make -j4 all 
+arm-none-eabi-size   freeRTOS.elf 
+   text	   data	    bss	    dec	    hex	filename
+  28100	    124	  20508	  48732	   be5c	freeRTOS.elf
+Finished building: default.size.stdout
+ 
+23:09:13 **** Incremental Build of configuration Debug for project freeRTOS ****
+make -j4 all 
+arm-none-eabi-size   freeRTOS.elf 
+   text	   data	    bss	    dec	    hex	filename
+  28100	    124	  20508	  48732	   be5c	freeRTOS.elf
+Finished building: default.size.stdout
+ 

@@ -1,0 +1,10 @@
+22:16:12 **** Incremental Build of configuration Debug for project lightHandling1 ****
+make -j4 all 
+arm-none-eabi-size   lightHandling1.elf 
+   text	   data	    bss	    dec	    hex	filename
+  15944	    120	   1896	  17960	   4628	lightHandling1.elf
+Finished building: default.size.stdout
+ 
+
+22:16:13 Build Finished. 0 errors, 0 warnings. (took 321ms)
+
